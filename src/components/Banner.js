@@ -5,7 +5,7 @@ import banner from "../imagens/banner.jpg";
 import banner01 from "../imagens/banner01.jpg";
 import banhoETosa from "../imagens/banhoETosa.png";
 
-function Banner() {
+const Banner = () => {
 	const [index, setIndex] = useState(0);
 
 	const handleSelect = (selectedIndex) => {
@@ -25,6 +25,6 @@ function Banner() {
 			</Carousel.Item>
 		</Carousel>
 	);
-}
+};
 
 export default Banner;
