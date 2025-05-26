@@ -1,14 +1,11 @@
 import React from "react";
 
-function ServicoCard({ imgUrl, imgAlt, title, imgHeight }) {
+function ServicoCard({ imgUrl, imgAlt, title }) {
 	return (
 		<div className="service-card">
-			<img
-				src={imgUrl}
-				alt={imgAlt}
-				className="service-card-image"
-				style={{ height: imgHeight }} 
-			/>
+			<div className="service-card-image-wrapper">
+				<img src={imgUrl} alt={imgAlt} className="service-card-image" />
+			</div>
 			<div className="service-card-caption">{title}</div>
 		</div>
 	);

@@ -13,28 +13,24 @@ const servicesData = [
 		imgUrl: banhoTosaImg,
 		imgAlt: "Banho e Tosa",
 		title: "Banho e Tosa",
-		imgHeight: "200px",
 	},
 	{
 		id: 2,
 		imgUrl: vacinaCachorroImg,
 		imgAlt: "Pet Care",
 		title: "Pet Care",
-		imgHeight: "200px",
 	},
 	{
 		id: 3,
 		imgUrl: adestramentoImg,
 		imgAlt: "Adestramento",
 		title: "Adestramento",
-		imgHeight: "200px",
 	},
 	{
 		id: 4,
 		imgUrl: hotelCachorrosImg,
 		imgAlt: "Hotel Resort",
 		title: "Hotel Resort",
-		imgHeight: "200px",
 	},
 ];
 
@@ -46,12 +42,7 @@ function Servico() {
 				<Row>
 					{servicesData.map((service) => (
 						<Col sm={12} md={6} lg={3} key={service.id} className="mb-4 d-flex">
-							<ServicoCard
-								imgUrl={service.imgUrl}
-								imgAlt={service.imgAlt}
-								title={service.title}
-								imgHeight={service.imgHeight}
-							/>
+							<ServicoCard imgUrl={service.imgUrl} imgAlt={service.imgAlt} title={service.title} />
 						</Col>
 					))}
 				</Row>
